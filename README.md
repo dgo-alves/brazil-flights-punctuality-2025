@@ -50,6 +50,12 @@ Power BI Desktop (DirectQuery)
 
 ---
 
+## Data Model
+
+![Data Model](assets/data_model.png)
+
+---
+
 ## Key DAX Measures
 
 ```dax

@@ -50,6 +50,12 @@ Power BI Desktop (DirectQuery)
 
 ---
 
+## Modelo de Dados
+
+![Modelo de Dados](assets/data_model.png)
+
+---
+
 ## Principais Medidas DAX
 
 ```dax
