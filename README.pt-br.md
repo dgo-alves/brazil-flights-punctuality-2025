@@ -1,18 +1,18 @@
 [Read in English](README.md)
 
-# ✈️ Análise de Pontualidade da Aviação Civil Brasileira — 2025
+# Análise de Pontualidade da Aviação Civil Brasileira — 2025
 
 Análise de mais de 970 mil voos operados no Brasil em 2025, utilizando dados abertos da ANAC (Agência Nacional de Aviação Civil). O projeto cobre o pipeline completo de dados: da ingestão de arquivos CSV no SQL Server até um dashboard interativo no Power BI.
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
 Identificar padrões de pontualidade, taxas de cancelamento e comportamento de atrasos entre as companhias aéreas brasileiras, demonstrando que analisar números absolutos sem contexto pode levar a conclusões equivocadas.
 
 ---
 
-## 🗂️ Fonte dos Dados
+## Fonte dos Dados
 
 - **Fonte:** ANAC — Agência Nacional de Aviação Civil
 - **Dataset:** VRA (Voo Regular Ativo)
@@ -22,7 +22,7 @@ Identificar padrões de pontualidade, taxas de cancelamento e comportamento de a
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Ferramenta | Uso |
 |---|---|
@@ -33,7 +33,7 @@ Identificar padrões de pontualidade, taxas de cancelamento e comportamento de a
 
 ---
 
-## 🏗️ Arquitetura do Projeto
+## Arquitetura do Projeto
 
 ```
 Arquivos CSV (ANAC)
@@ -50,7 +50,7 @@ Power BI Desktop (DirectQuery)
 
 ---
 
-## 📐 Principais Medidas DAX
+## Principais Medidas DAX
 
 ```dax
 Total Voos = COUNTROWS(vw_voos)
@@ -74,13 +74,13 @@ DIVIDE([Total Atrasados], [Total Realizados], 0)
 
 ---
 
-## 📊 Preview do Dashboard
+## Preview do Dashboard
 
-![Dashboard Preview](assets/dashboard_preview.png)
+![Dashboard Preview](assets/dashboard_preview_pt-br.png)
 
 ---
 
-## 🔍 Principais Insights
+## Principais Insights
 
 - A Azul Linhas Aéreas lidera em cancelamentos absolutos (1.038), mas tem taxa de cancelamento abaixo de 4%
 - A Sky Airline, quinta no absoluto, se torna a primeira em percentual de cancelamentos com quase 20%
@@ -89,7 +89,7 @@ DIVIDE([Total Atrasados], [Total Realizados], 0)
 
 ---
 
-## ▶️ Como Reproduzir
+##Como Reproduzir
 
 1. Baixar os arquivos CSV do VRA no site da ANAC (link acima)
 2. Criar o banco de dados e a tabela no SQL Server usando os scripts da pasta `/sql`
@@ -99,13 +99,13 @@ DIVIDE([Total Atrasados], [Total Realizados], 0)
 
 ---
 
-## 👤 Autor
+## Autor
 
-**Diego**
-[LinkedIn](https://www.linkedin.com/in/seu-perfil)
+**Diego Alves**
+[LinkedIn](https://www.linkedin.com/in/diego-alvess)
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto é para fins de portfólio. Os dados são públicos e disponibilizados pela ANAC.

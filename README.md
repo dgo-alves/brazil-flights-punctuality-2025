@@ -1,18 +1,18 @@
 [Leia em Português](README.pt-br.md)
 
-# ✈️ Brazilian Aviation Punctuality Analysis — 2025
+# Brazilian Aviation Punctuality Analysis — 2025
 
 Analysis of over 970,000 flights operated in Brazil in 2025, using open data from ANAC (Brazil's National Civil Aviation Agency). The project covers the full data pipeline: from raw CSV ingestion into SQL Server to an interactive Power BI dashboard.
 
 ---
 
-## 📌 Objective
+## Objective
 
 Identify punctuality patterns, cancellation rates, and delay behavior across Brazilian airlines, demonstrating that analyzing absolute numbers without context can lead to misleading conclusions.
 
 ---
 
-## 🗂️ Data Source
+## Data Source
 
 - **Source:** ANAC — National Civil Aviation Agency of Brazil
 - **Dataset:** VRA (Voo Regular Ativo) — Regular Active Flights
@@ -22,7 +22,7 @@ Identify punctuality patterns, cancellation rates, and delay behavior across Bra
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Usage |
 |---|---|
@@ -33,7 +33,7 @@ Identify punctuality patterns, cancellation rates, and delay behavior across Bra
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
 CSV Files (ANAC)
@@ -50,7 +50,7 @@ Power BI Desktop (DirectQuery)
 
 ---
 
-## 📐 Key DAX Measures
+## Key DAX Measures
 
 ```dax
 Total Voos = COUNTROWS(vw_voos)
@@ -74,13 +74,13 @@ DIVIDE([Total Atrasados], [Total Realizados], 0)
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
-![Dashboard Preview](assets/dashboard_preview.png)
+![Dashboard Preview](assets/dashboard_preview_en.png)
 
 ---
 
-## 🔍 Key Insights
+## Key Insights
 
 - Azul Linhas Aéreas leads in absolute cancellations (1,038), but has a cancellation rate below 4%
 - Sky Airline, fifth in absolute cancellations, becomes first in cancellation rate with nearly 20%
@@ -89,7 +89,7 @@ DIVIDE([Total Atrasados], [Total Realizados], 0)
 
 ---
 
-## ▶️ How to Reproduce
+## How to Reproduce
 
 1. Download the VRA CSV files from the ANAC website (link above)
 2. Create the database and table in SQL Server using the scripts in `/sql`
@@ -99,13 +99,13 @@ DIVIDE([Total Atrasados], [Total Realizados], 0)
 
 ---
 
-## 👤 Author
+## Author
 
-**Diego**
-[LinkedIn](https://www.linkedin.com/in/your-profile)
+**Diego Alves**
+[LinkedIn](https://www.linkedin.com/in/diego-alvess)
 
 ---
 
-## 📄 License
+## License
 
 This project is for portfolio purposes. Data is publicly available from ANAC.
