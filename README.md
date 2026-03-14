@@ -52,7 +52,7 @@ Power BI Desktop (DirectQuery)
 
 ## Data Model
 
-![Data Model](assets/data_model.png)
+![Data Model](assets/model_overview.png)
 
 ---
 
