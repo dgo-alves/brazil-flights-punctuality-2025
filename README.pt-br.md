@@ -1,6 +1,6 @@
 [Read in English](README.md)
 
-# Análise de Pontualidade da Aviação Civil Brasileira — 2025
+# Análise de Pontualidade da Aviação Civil Brasileira em 2025
 
 Análise de mais de 970 mil voos operados no Brasil em 2025, utilizando dados abertos da ANAC (Agência Nacional de Aviação Civil). O projeto cobre o pipeline completo de dados: da ingestão de arquivos CSV no SQL Server até um dashboard interativo no Power BI.
 
@@ -14,7 +14,7 @@ Identificar padrões de pontualidade, taxas de cancelamento e comportamento de a
 
 ## Fonte dos Dados
 
-- **Fonte:** ANAC — Agência Nacional de Aviação Civil
+- **Fonte:** ANAC - Agência Nacional de Aviação Civil
 - **Dataset:** VRA (Voo Regular Ativo)
 - **Período:** Janeiro a Dezembro de 2025
 - **Registros:** ~977 mil voos
@@ -39,12 +39,12 @@ Identificar padrões de pontualidade, taxas de cancelamento e comportamento de a
 Arquivos CSV (ANAC)
       ↓
 SQL Server Express
-  └── fato_voos (tabela fato — 977k linhas)
+  └── fato_voos (tabela fato - 977k linhas)
   └── vw_voos (view com colunas calculadas)
       ↓
 Power BI Desktop (DirectQuery)
   ├── dim_empresas_aereas (dimensão de companhias)
-  ├── dCalendario (tabela calendário — Power Query)
+  ├── dCalendario (tabela calendário - Power Query)
   └── _Medidas (tabela de medidas DAX)
 ```
 

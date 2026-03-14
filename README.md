@@ -1,6 +1,6 @@
 [Leia em Português](README.pt-br.md)
 
-# Brazilian Aviation Punctuality Analysis — 2025
+# Brazilian Aviation Punctuality Analysis in 2025
 
 Analysis of over 970,000 flights operated in Brazil in 2025, using open data from ANAC (Brazil's National Civil Aviation Agency). The project covers the full data pipeline: from raw CSV ingestion into SQL Server to an interactive Power BI dashboard.
 
@@ -14,8 +14,8 @@ Identify punctuality patterns, cancellation rates, and delay behavior across Bra
 
 ## Data Source
 
-- **Source:** ANAC — National Civil Aviation Agency of Brazil
-- **Dataset:** VRA (Voo Regular Ativo) — Regular Active Flights
+- **Source:** ANAC - National Civil Aviation Agency of Brazil
+- **Dataset:** VRA (Voo Regular Ativo) - Regular Active Flights
 - **Period:** January to December 2025
 - **Records:** ~977,000 flights
 - **Download:** [gov.br/anac](https://www.gov.br/anac/pt-br/assuntos/dados-e-estatisticas/historico-de-voos)
@@ -39,12 +39,12 @@ Identify punctuality patterns, cancellation rates, and delay behavior across Bra
 CSV Files (ANAC)
       ↓
 SQL Server Express
-  └── fato_voos (fact table — 977k rows)
+  └── fato_voos (fact table - 977k rows)
   └── vw_voos (view with calculated columns)
       ↓
 Power BI Desktop (DirectQuery)
   ├── dim_empresas_aereas (airline dimension)
-  ├── dCalendario (calendar table — Power Query)
+  ├── dCalendario (calendar table - Power Query)
   └── _Medidas (DAX measures table)
 ```
 
