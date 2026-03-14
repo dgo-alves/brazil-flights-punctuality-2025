@@ -86,6 +86,12 @@ DIVIDE([Total Atrasados], [Total Realizados], 0)
 
 ---
 
+## Download
+
+[Download arquivo Power BI (.pbix)](https://github.com/dgo-alves/brazil-flights-punctuality-2025/releases/download/v1.0/Brazil.Flight.Analysis.in.2025.pbix)
+
+---
+
 ## Principais Insights
 
 - A Azul Linhas Aéreas lidera em cancelamentos absolutos (1.038), mas tem taxa de cancelamento abaixo de 4%
